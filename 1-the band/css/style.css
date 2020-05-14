@@ -1,0 +1,107 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    font-family: sans-serif;
+}
+
+
+/* clearfix
+================================================ */
+
+.cf::before,
+.cf::after {
+    content: ' ';
+    display: table;
+}
+
+.cf::after {
+    clear: both;
+}
+
+
+/* header
+================================================ */
+
+.header {
+    background-color: #1d1d1d;
+}
+
+.touch {
+    float: right;
+}
+
+.home {
+    float: left;
+}
+
+
+/* 
+navigation 
+====================================== */
+
+.nav {
+    display: flex;
+}
+
+
+/* 
+ul of nav 
+====================================== */
+
+.nav_list {
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+
+/* 
+li in ul 
+====================================== */
+
+.nav_link {
+    list-style-type: none;
+}
+
+
+/* 
+a in li 
+====================================== */
+
+.nav_links,
+.home {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: .5em 1em;
+    outline: none;
+    color: #ffffff;
+}
+
+.home:hover,
+.nav_links:hover,
+.touch:hover {
+    background-color: gray;
+}
+
+
+/* 
+touch menu 
+====================================== */
+
+.fa-bars {
+    padding: 1em;
+    color: #ffffff;
+}
