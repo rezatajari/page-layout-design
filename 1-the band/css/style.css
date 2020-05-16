@@ -16,6 +16,16 @@ body {
 }
 
 
+/* container
+================================================ */
+
+.inner_container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+
 /* clearfix
 ================================================ */
 
@@ -125,18 +135,68 @@ a in li
 /* slide show
 ====================================== */
 
-.slideshow {
-    position: relative;
-}
+.slideshow {}
 
 .image_slideshow {
-    position: absolute;
-    left: 0;
-    right: 0;
     margin: 0;
 }
 
 .image_slideshow img {
     display: block;
     width: 100%;
+}
+
+
+/* band
+========================================= */
+
+
+/* the band
+========================================= */
+
+.band {
+    text-align: center;
+    padding: 7em 0;
+}
+
+.the_band {}
+
+.major_titles {
+    font-size: 1.9em;
+    margin: 0 0 1.2em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.major_tagtitls {
+    color: gray;
+    font-style: italic;
+}
+
+.the_band_text {
+    text-align: justify;
+}
+
+
+/* band member
+======================================== */
+
+.bandmember {
+    width: 65%;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+.bandmember_items {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.bandmember_items span {
+    margin: 3em 0 1em;
+}
+
+.bandmember_items:first-child span {
+    margin-top: 0;
 }
