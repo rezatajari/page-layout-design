@@ -157,6 +157,7 @@ a in li
 .band {
     text-align: center;
     padding: 7em 0;
+    display: none;
 }
 
 .the_band {}
@@ -199,4 +200,64 @@ a in li
 
 .bandmember_items:first-child span {
     margin-top: 0;
+}
+
+
+/* tour
+============================================ */
+
+.dates {
+    background-color: #1d1d1d;
+}
+
+.tour_dates {
+    padding: 5em 0;
+    text-align: center;
+}
+
+.sold_list {
+    text-align: initial;
+    margin: 3em 0 2em;
+    padding: 0;
+    background-color: #fff;
+}
+
+.sold_list li {
+    list-style-type: none;
+    padding: .5em 1em;
+}
+
+
+/* below bottom of september & october
+========================================== */
+
+.sold_list li:nth-child(1),
+.sold_list li:nth-child(2) {
+    border-bottom: 2px solid #eee;
+}
+
+
+/* september,october,november
+===================================== */
+
+.sold_list li span:first-child {
+    color: gray;
+}
+
+.sold_out {
+    background-color: #f44336;
+    padding: .3em;
+    color: #ffffff;
+}
+
+
+/* 3 number
+================= */
+
+.sold_list li:nth-child(3) span:nth-child(2) {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 1px 10px;
+    border-radius: 50%;
+    float: right;
 }
