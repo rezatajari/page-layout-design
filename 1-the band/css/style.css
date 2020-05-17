@@ -135,7 +135,9 @@ a in li
 /* slide show
 ====================================== */
 
-.slideshow {}
+.slideshow {
+    display: none;
+}
 
 .image_slideshow {
     margin: 0;
@@ -157,6 +159,7 @@ a in li
 .band {
     text-align: center;
     padding: 7em 0;
+    display: none;
 }
 
 .the_band {}
@@ -207,6 +210,7 @@ a in li
 
 .dates {
     background-color: #1d1d1d;
+    display: none;
 }
 
 .tour_dates {
@@ -327,4 +331,95 @@ a in li
 
 .tour_info a:hover {
     background-color: gray;
+}
+
+
+/* contact section
+======================================================= */
+
+.contact {
+    margin: 5em 0;
+}
+
+.title_contact {
+    text-align: center;
+}
+
+.contact_info {
+    margin-bottom: 1.3em;
+}
+
+
+/* ul in contact info 
+=============================*/
+
+.contact_info ul {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.6em;
+}
+
+
+/* li of ul in contact info 
+==============================*/
+
+.contact_info ul li {
+    list-style-type: none;
+}
+
+
+/* margin between right text in li against left icons them
+================================================================ */
+
+.contact_info ul li span:first-child {
+    display: inline-block;
+    width: 1.5em;
+}
+
+
+/* form in contact section
+============================================================== */
+
+.contact_form {
+    margin-bottom: 7em;
+}
+
+.contact_input {
+    display: block;
+    width: 100%;
+    padding: .5em .7em;
+    font: inherit;
+}
+
+.contact_input:nth-child(3) {
+    margin-top: .5em;
+}
+
+.send_contact {
+    display: block;
+    border: none;
+    border-radius: 3px;
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: .6em 1.1em;
+    font-weight: 600;
+    margin-top: .5em;
+    margin-left: auto;
+}
+
+.send_contact:hover {
+    background-color: gray;
+}
+
+
+/* map image
+============================== */
+
+.map_image {}
+
+.map_image img {
+    display: block;
+    width: 100%;
 }
