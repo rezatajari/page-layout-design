@@ -135,9 +135,7 @@ a in li
 /* slide show
 ====================================== */
 
-.slideshow {
-    display: none;
-}
+.slideshow {}
 
 .image_slideshow {
     margin: 0;
@@ -159,7 +157,6 @@ a in li
 .band {
     text-align: center;
     padding: 7em 0;
-    display: none;
 }
 
 .the_band {}
@@ -210,7 +207,6 @@ a in li
 
 .dates {
     background-color: #1d1d1d;
-    display: none;
 }
 
 .tour_dates {
@@ -346,7 +342,7 @@ a in li
 }
 
 .contact_info {
-    margin-bottom: 1.3em;
+    margin: 3em 0 1.3em;
 }
 
 
