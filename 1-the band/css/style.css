@@ -338,7 +338,7 @@ a in li
 ======================================================= */
 
 .contact {
-    margin: 5em 0;
+    margin: 5em 0 0;
 }
 
 .title_contact {
@@ -422,4 +422,46 @@ a in li
 .map_image img {
     display: block;
     width: 100%;
+}
+
+
+/* footer section
+============================================= */
+
+.footer {
+    padding: 5em 0;
+}
+
+.footer_details {
+    text-align: center;
+}
+
+.footer_list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.footer_link {
+    list-style-type: none;
+    padding: 0 .2em;
+}
+
+.footer_links {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: gray;
+    transition: .2s color ease-out;
+}
+
+.footer_links:hover {
+    color: #eee;
+}
+
+.footer_details span,
+.footer_details span a {
+    color: gray;
+    font-size: .93em;
 }
