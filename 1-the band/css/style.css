@@ -157,7 +157,6 @@ a in li
 .band {
     text-align: center;
     padding: 7em 0;
-    display: none;
 }
 
 .the_band {}
@@ -211,8 +210,12 @@ a in li
 }
 
 .tour_dates {
-    padding: 5em 0;
+    padding: 5em 0 0;
     text-align: center;
+}
+
+.tour_dates .major_titles {
+    color: #fff;
 }
 
 .sold_list {
@@ -260,4 +263,68 @@ a in li
     padding: 1px 10px;
     border-radius: 50%;
     float: right;
+}
+
+
+/* tour items 
+======================================================= */
+
+.tour_items {
+    padding: 0 0 5em;
+}
+
+.gutter {
+    padding: .5em 0;
+}
+
+.tour_item {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.tour_image {}
+
+.tour_image img {
+    display: block;
+    width: 100%;
+}
+
+.tour_info {
+    padding: 0 1em 1em;
+}
+
+
+/* title
+================= */
+
+.tour_info h4 {
+    text-transform: capitalize;
+}
+
+
+/* tag of title
+================= */
+
+.tour_info span {
+    color: gray;
+    text-transform: capitalize;
+}
+
+
+/* buy tickets
+================== */
+
+.tour_info a {
+    display: inline-block;
+    background-color: #1d1d1d;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: .5em 1em;
+    border-radius: 3px;
+}
+
+.tour_info a:hover {
+    background-color: gray;
 }
