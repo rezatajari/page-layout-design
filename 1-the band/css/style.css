@@ -10,6 +10,7 @@ html {
 
 body {
     margin: 0;
+    margin-top: 2.531em;
     padding: 0;
     line-height: 1.5em;
     font-family: sans-serif;
@@ -45,6 +46,10 @@ body {
 
 .header {
     background-color: #1d1d1d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 
@@ -59,6 +64,7 @@ touch menu & home li
 
 .touch {
     float: right;
+    cursor: pointer;
 }
 
 .home {
