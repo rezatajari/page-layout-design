@@ -1,3 +1,5 @@
+@media(min-width:37.5625em) {}
+
 html {
     box-sizing: border-box;
 }
@@ -24,6 +26,20 @@ body {
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
+}
+
+@media(min-width:37.5625em) {
+    .inner_container {
+        max-width: 52em;
+    }
+}
+
+
+/* guuter
+================================================ */
+
+.gutter {
+    padding: .5em 0;
 }
 
 
@@ -152,6 +168,20 @@ a in li
     width: 100%;
 }
 
+.info_image {
+    display: none;
+    text-align: center;
+    margin-top: -10em;
+    color: #fff;
+    font-weight: 600;
+}
+
+@media(min-width:37.5625em) {
+    .info_image {
+        display: block;
+    }
+}
+
 
 /* band
 ========================================= */
@@ -193,6 +223,18 @@ a in li
     padding: 3em 0;
 }
 
+@media(min-width:37.5625em) {
+    .bandmember {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bandmember .gutter {
+        padding: .5em;
+        width: 33.33%;
+    }
+}
+
 .bandmember_items {
     margin: 0;
     display: flex;
@@ -205,6 +247,12 @@ a in li
 
 .bandmember_items:first-child span {
     margin-top: 0;
+}
+
+@media(min-width:37.5625em) {
+    .bandmember_items:first-child span {
+        margin-top: 3em;
+    }
 }
 
 
@@ -229,6 +277,12 @@ a in li
     margin: 3em 0 2em;
     padding: 0;
     background-color: #fff;
+}
+
+@media(min-width:37.5625em) {
+    .tour_dates .gutter {
+        padding: 0 .5em;
+    }
 }
 
 .sold_list li {
@@ -279,8 +333,14 @@ a in li
     padding: 0 0 5em;
 }
 
-.gutter {
-    padding: .5em 0;
+@media(min-width:37.5625em) {
+    .tour_items {
+        display: flex;
+    }
+    .tour_items .gutter {
+        padding: 0 .5em;
+        width: 33.33%;
+    }
 }
 
 .tour_item {
@@ -347,6 +407,17 @@ a in li
     text-align: center;
 }
 
+@media(min-width:37.5625em) {
+    .main_contact {
+        display: flex;
+        align-items: baseline;
+    }
+    .main_contact .gutter {
+        width: 50%;
+        padding: 0 .5em;
+    }
+}
+
 .contact_info {
     margin: 3em 0 1.3em;
 }
@@ -388,6 +459,16 @@ a in li
     margin-bottom: 7em;
 }
 
+@media(min-width:37.5625em) {
+    .d_resp {
+        display: flex;
+    }
+    .d_resp .gutter {
+        padding: 0 .5em;
+        width: 50%;
+    }
+}
+
 .contact_input {
     display: block;
     width: 100%;
@@ -395,8 +476,15 @@ a in li
     font: inherit;
 }
 
-.contact_input:nth-child(3) {
+.contact_form .gutter .contact_input {
     margin-top: .5em;
+}
+
+@media(min-width:37.5625em) {
+    .contact_form .gutter {
+        padding: 0 .5em;
+        width: 100%;
+    }
 }
 
 .send_contact {

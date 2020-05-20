@@ -46,18 +46,31 @@
         <section class="slideshow">
             <figure class="image_slideshow">
                 <img src="images/scene.jpg" alt="scene">
+                <div class="info_image">
+                    <h3>New Your</h3>
+                    <p>The atmosphere in New York is lorem ipsum.</p>
+                </div>
             </figure>
             <figure class="image_slideshow">
                 <img src="images/singer.jpg" alt="singer">
+                <div class="info_image">
+                    <h3>Chicago</h3>
+                    <p>Thank you, Chicago - A night we won't forget</p>
+                </div>
             </figure>
             <figure class="image_slideshow">
                 <img src="images/team.jpg" alt="team">
+                <div class="info_image">
+                    <h3>Los Angeles</h3>
+                    <p>We had the best time playing at Venice Beach!</p>
+                </div>
             </figure>
         </section>
 
 
         <!-- band section
         ==================================================== -->
+
         <section id="band" class="band">
             <div class="inner_container">
 
@@ -74,18 +87,24 @@
                 <!-- band member
                 ============================================ -->
                 <div class="bandmember">
-                    <figure class="bandmember_items">
-                        <span>Name</span>
-                        <img src="images/bandmember.jpg" alt="bandmember">
-                    </figure>
-                    <figure class="bandmember_items">
-                        <span>Name</span>
-                        <img src="images/bandmember.jpg" alt="bandmember">
-                    </figure>
-                    <figure class="bandmember_items">
-                        <span>Name</span>
-                        <img src="images/bandmember.jpg" alt="bandmember">
-                    </figure>
+                    <div class="gutter">
+                        <figure class="bandmember_items">
+                            <span>Name</span>
+                            <img src="images/bandmember.jpg" alt="bandmember">
+                        </figure>
+                    </div>
+                    <div class="gutter">
+                        <figure class="bandmember_items">
+                            <span>Name</span>
+                            <img src="images/bandmember.jpg" alt="bandmember">
+                        </figure>
+                    </div>
+                    <div class="gutter">
+                        <figure class="bandmember_items">
+                            <span>Name</span>
+                            <img src="images/bandmember.jpg" alt="bandmember">
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>
@@ -97,26 +116,30 @@
             <div class="inner_container">
 
                 <!-- tour dates (top section of tour dates)-->
+
                 <div class="tour_dates">
                     <h2 class="major_titles">tour dates</h2>
                     <span class="major_tagtitls">Remember to book your tickets!</span>
-                    <ul class="sold_list">
-                        <li>
-                            <span>September</span>
-                            <span class="sold_out">Sold out</span>
-                        </li>
+                    <div class="gutter">
+                        <ul class="sold_list">
+                            <li>
+                                <span>September</span>
+                                <span class="sold_out">Sold out</span>
+                            </li>
 
-                        <li>
-                            <span>October</span>
-                            <span class="sold_out">Sold out</span>
-                        </li>
-                        <li>
-                            <span>November</span>
-                            <span>3</span>
-                        </li>
-                    </ul>
+                            <li>
+                                <span>October</span>
+                                <span class="sold_out">Sold out</span>
+                            </li>
+                            <li>
+                                <span>November</span>
+                                <span>3</span>
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
+
 
                 <!-- tour items (down section of tour dates) -->
                 <div class="tour_items">
@@ -177,33 +200,47 @@
                     <span class="major_tagtitls">Fan? Drop a note!</span>
                 </div>
 
-                <!-- information of contact
+                <div class="main_contact">
+                    <!-- information of contact
             ================================ -->
-                <div class="contact_info">
-                    <ul>
-                        <li>
-                            <span><i class="fa fa-map-marker"></i></span>
-                            <span>Chicago, US</span>
-                        </li>
-                        <li>
-                            <span><i class="fa fa-phone"></i></span>
-                            <span>Phone: +00 151515</span>
-                        </li>
-                        <li>
-                            <span><i class="fa fa-envelope"></i></span>
-                            <span>Email: mail@mail.com</span>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="gutter">
+                        <div class="contact_info">
+                            <ul>
+                                <li>
+                                    <span><i class="fa fa-map-marker"></i></span>
+                                    <span>Chicago, US</span>
+                                </li>
+                                <li>
+                                    <span><i class="fa fa-phone"></i></span>
+                                    <span>Phone: +00 151515</span>
+                                </li>
+                                <li>
+                                    <span><i class="fa fa-envelope"></i></span>
+                                    <span>Email: mail@mail.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-                <!-- form in contact
+                    <!-- form in contact
             ================================ -->
-                <form action="" class="contact_form">
-                    <input type="text" class="contact_input" placeholder="Name">
-                    <input type="email" class="contact_input" placeholder="Email">
-                    <input type="text" class="contact_input" placeholder="Message">
-                    <button class="send_contact">send</button>
-                </form>
+                    <div class="gutter">
+                        <form action="" class="contact_form">
+                            <div class="d_resp">
+                                <div class="gutter">
+                                    <input type="text" class="contact_input" placeholder="Name">
+                                </div>
+                                <div class="gutter">
+                                    <input type="email" class="contact_input" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="gutter">
+                                <input type="text" class="contact_input" placeholder="Message">
+                                <button class="send_contact">send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
 
             <!-- map image
