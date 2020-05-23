@@ -1,0 +1,557 @@
+@media(min-width:37.5625em) {}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    margin-top: 2.531em;
+    padding: 0;
+    line-height: 1.5em;
+    font-family: sans-serif;
+}
+
+
+/* container
+================================================ */
+
+.inner_container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+@media(min-width:37.5625em) {
+    .inner_container {
+        max-width: 52em;
+    }
+}
+
+
+/* guuter
+================================================ */
+
+.gutter {
+    padding: .5em 0;
+}
+
+
+/* clearfix
+================================================ */
+
+.cf::before,
+.cf::after {
+    content: ' ';
+    display: table;
+}
+
+.cf::after {
+    clear: both;
+}
+
+
+/* header
+================================================ */
+
+.header {
+    background-color: #1d1d1d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* 
+touch menu & home li
+====================================== */
+
+.fa-bars {
+    padding: .75em;
+    color: #ffffff;
+}
+
+.touch {
+    float: right;
+    cursor: pointer;
+}
+
+.home {
+    float: left;
+}
+
+
+/* 
+navigation 
+====================================== */
+
+.nav {
+    display: flex;
+    background-color: #1d1d1d;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.navshow {
+    display: none;
+}
+
+
+/* 
+ul of nav 
+====================================== */
+
+.nav_list {
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+
+/* 
+li in ul 
+====================================== */
+
+.nav_link {
+    list-style-type: none;
+}
+
+
+/* 
+a in li 
+====================================== */
+
+.nav_links,
+.home {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: .5em 1em;
+    outline: none;
+    color: #ffffff;
+}
+
+.home:hover,
+.nav_links:hover,
+.touch:hover {
+    background-color: gray;
+}
+
+
+/* main
+======================================= */
+
+.main {}
+
+
+/* slide show
+====================================== */
+
+.slideshow {}
+
+.image_slideshow {
+    margin: 0;
+}
+
+.image_slideshow img {
+    display: block;
+    width: 100%;
+}
+
+.info_image {
+    display: none;
+    text-align: center;
+    margin-top: -10em;
+    color: #fff;
+    font-weight: 600;
+}
+
+@media(min-width:37.5625em) {
+    .info_image {
+        display: block;
+    }
+}
+
+
+/* band
+========================================= */
+
+
+/* the band
+========================================= */
+
+.band {
+    text-align: center;
+    padding: 7em 0;
+}
+
+.the_band {}
+
+.major_titles {
+    font-size: 1.9em;
+    margin: 0 0 1.2em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.major_tagtitls {
+    color: gray;
+    font-style: italic;
+}
+
+.the_band_text {
+    text-align: justify;
+}
+
+
+/* band member
+======================================== */
+
+.bandmember {
+    width: 65%;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+@media(min-width:37.5625em) {
+    .bandmember {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bandmember .gutter {
+        padding: .5em;
+        width: 33.33%;
+    }
+}
+
+.bandmember_items {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.bandmember_items span {
+    margin: 3em 0 1em;
+}
+
+.bandmember_items:first-child span {
+    margin-top: 0;
+}
+
+@media(min-width:37.5625em) {
+    .bandmember_items:first-child span {
+        margin-top: 3em;
+    }
+}
+
+
+/* tour
+============================================ */
+
+.dates {
+    background-color: #1d1d1d;
+}
+
+.tour_dates {
+    padding: 5em 0 0;
+    text-align: center;
+}
+
+.tour_dates .major_titles {
+    color: #fff;
+}
+
+.sold_list {
+    text-align: initial;
+    margin: 3em 0 2em;
+    padding: 0;
+    background-color: #fff;
+}
+
+@media(min-width:37.5625em) {
+    .tour_dates .gutter {
+        padding: 0 .5em;
+    }
+}
+
+.sold_list li {
+    list-style-type: none;
+    padding: .5em 1em;
+}
+
+
+/* below bottom of september & october
+========================================== */
+
+.sold_list li:nth-child(1),
+.sold_list li:nth-child(2) {
+    border-bottom: 2px solid #eee;
+}
+
+
+/* september,october,november
+===================================== */
+
+.sold_list li span:first-child {
+    color: gray;
+}
+
+.sold_out {
+    background-color: #f44336;
+    padding: .3em;
+    color: #ffffff;
+}
+
+
+/* 3 number
+================= */
+
+.sold_list li:nth-child(3) span:nth-child(2) {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 1px 10px;
+    border-radius: 50%;
+    float: right;
+}
+
+
+/* tour items 
+======================================================= */
+
+.tour_items {
+    padding: 0 0 5em;
+}
+
+@media(min-width:37.5625em) {
+    .tour_items {
+        display: flex;
+    }
+    .tour_items .gutter {
+        padding: 0 .5em;
+        width: 33.33%;
+    }
+}
+
+.tour_item {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.tour_image {}
+
+.tour_image img {
+    display: block;
+    width: 100%;
+}
+
+.tour_info {
+    padding: 0 1em 1em;
+}
+
+
+/* title
+================= */
+
+.tour_info h4 {
+    text-transform: capitalize;
+}
+
+
+/* tag of title
+================= */
+
+.tour_info span {
+    color: gray;
+    text-transform: capitalize;
+}
+
+
+/* buy tickets
+================== */
+
+.tour_info a {
+    display: inline-block;
+    background-color: #1d1d1d;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: .5em 1em;
+    border-radius: 3px;
+}
+
+.tour_info a:hover {
+    background-color: gray;
+}
+
+
+/* contact section
+======================================================= */
+
+.contact {
+    margin: 5em 0 0;
+}
+
+.title_contact {
+    text-align: center;
+}
+
+@media(min-width:37.5625em) {
+    .main_contact {
+        display: flex;
+        align-items: baseline;
+    }
+    .main_contact .gutter {
+        width: 50%;
+        padding: 0 .5em;
+    }
+}
+
+.contact_info {
+    margin: 3em 0 1.3em;
+}
+
+
+/* ul in contact info 
+=============================*/
+
+.contact_info ul {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.6em;
+}
+
+
+/* li of ul in contact info 
+==============================*/
+
+.contact_info ul li {
+    list-style-type: none;
+}
+
+
+/* margin between right text in li against left icons them
+================================================================ */
+
+.contact_info ul li span:first-child {
+    display: inline-block;
+    width: 1.5em;
+}
+
+
+/* form in contact section
+============================================================== */
+
+.contact_form {
+    margin-bottom: 7em;
+}
+
+@media(min-width:37.5625em) {
+    .d_resp {
+        display: flex;
+    }
+    .d_resp .gutter {
+        padding: 0 .5em;
+        width: 50%;
+    }
+}
+
+.contact_input {
+    display: block;
+    width: 100%;
+    padding: .5em .7em;
+    font: inherit;
+}
+
+.contact_form .gutter .contact_input {
+    margin-top: .5em;
+}
+
+@media(min-width:37.5625em) {
+    .contact_form .gutter {
+        padding: 0 .5em;
+        width: 100%;
+    }
+}
+
+.send_contact {
+    display: block;
+    border: none;
+    border-radius: 3px;
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: .6em 1.1em;
+    font-weight: 600;
+    margin-top: .5em;
+    margin-left: auto;
+}
+
+.send_contact:hover {
+    background-color: gray;
+}
+
+
+/* map image
+============================== */
+
+.map_image {}
+
+.map_image img {
+    display: block;
+    width: 100%;
+}
+
+
+/* footer section
+============================================= */
+
+.footer {
+    padding: 5em 0;
+}
+
+.footer_details {
+    text-align: center;
+}
+
+.footer_list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.footer_link {
+    list-style-type: none;
+    padding: 0 .2em;
+}
+
+.footer_links {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: gray;
+    transition: .2s color ease-out;
+}
+
+.footer_links:hover {
+    color: #eee;
+}
+
+.footer_details span,
+.footer_details span a {
+    color: gray;
+    font-size: .93em;
+}
