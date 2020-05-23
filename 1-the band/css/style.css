@@ -1,5 +1,3 @@
-@media(min-width:37.5625em) {}
-
 html {
     box-sizing: border-box;
 }
@@ -68,6 +66,12 @@ body {
     right: 0;
 }
 
+@media(min-width:37.5625em) {
+    .header .cf {
+        float: left;
+    }
+}
+
 
 /* 
 touch menu & home li
@@ -81,6 +85,12 @@ touch menu & home li
 .touch {
     float: right;
     cursor: pointer;
+}
+
+@media(min-width:37.5625em) {
+    .touch {
+        display: none;
+    }
 }
 
 .home {
@@ -101,8 +111,20 @@ navigation
     z-index: 1;
 }
 
+@media(min-width:37.5625em) {
+    .nav {
+        position: initial;
+    }
+}
+
 .navshow {
     display: none;
+}
+
+@media(min-width:37.5625em) {
+    .navshow {
+        display: block;
+    }
 }
 
 
@@ -110,10 +132,35 @@ navigation
 ul of nav 
 ====================================== */
 
-.nav_list {
+.nav_list,
+.nav_list ul {
     margin: 0;
     padding: 0;
     flex-grow: 1;
+}
+
+
+/* sub menu by more link 
+====================================== */
+
+.nav_list ul {
+    position: absolute;
+    background-color: #fff;
+    display: none;
+}
+
+
+/* color of sub menu 
+====================================== */
+
+.nav_list ul li a {
+    color: #1d1d1d;
+}
+
+@media(min-width:37.5625em) {
+    .nav_list {
+        display: flex;
+    }
 }
 
 
@@ -123,6 +170,45 @@ li in ul
 
 .nav_link {
     list-style-type: none;
+}
+
+
+/* search link in the right site
+======================================= */
+
+.search {
+    display: none;
+}
+
+
+/* more link for sub menu in desktop mode
+=========================================== */
+
+.more {
+    display: none;
+}
+
+
+/* responsive remove merch link, more:visible self and visible sub menu, search: right side 
+================================================================================================================== */
+
+@media(min-width:37.5625em) {
+    .remov_merch {
+        display: none;
+    }
+    .more {
+        display: initial;
+    }
+    .more:hover ul {
+        display: block;
+    }
+    .more i {
+        margin-left: .2em;
+    }
+    .search {
+        display: initial;
+        margin-left: auto;
+    }
 }
 
 
