@@ -1,0 +1,131 @@
+/* استایل های عمومی */
+
+html {
+    box-sizing: border-box;
+    font-family: 'Iranian Sans';
+    src: url(../Iranian\ Sans.ttf);
+}
+
+body,
+select,
+input,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button,
+label,
+span {
+    font-family: 'Iranian Sans', Tahoma;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.text-dark {
+    color: #666!important;
+}
+
+
+/* شروع استایل های اصلی
+============================================== */
+
+nav {
+    font-size: 1em;
+}
+
+
+/* لوگوی توریستگاه */
+
+.logo {
+    max-height: 34px;
+}
+
+
+/*  لیست کل منو */
+
+.list_menu,
+.more_sub {
+    width: 0;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f5f0d3;
+    padding-top: 4em;
+    height: 100%;
+    transition: .5s;
+}
+
+
+/* کلید بسته شدن منو و لوگوی داخل منو زمانی که در حالت موبایل هستیم */
+
+.close_menu,
+.list_menu .logo {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    color: #5b502f;
+}
+
+.list_menu .logo {
+    right: 2%;
+}
+
+
+/* گزینه های منوها
+============================================= */
+
+
+/* قسمت بالایی منو در حالت موبایل */
+
+.top_menu_mobile {
+    border-bottom: 1px solid #d7c871;
+}
+
+
+/* لیست منو ها */
+
+.nav-item {
+    border-bottom: 1px solid #d7c871;
+    width: 350px;
+}
+
+
+/* کلید لیست منوها */
+
+.nav-link {
+    color: #5b502f!important;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+.nav-link:hover {
+    background-color: #147;
+    color: #fff!important;
+}
+
+
+/* آیکون های منو در حالت موبایل */
+
+.nav-link i {
+    font-size: 1.1em;
+}
+
+header {
+    border: 2px solid red;
+}
