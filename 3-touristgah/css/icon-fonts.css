@@ -1,0 +1,41 @@
+/* special fonts defination */
+
+@font-face {
+    font-family: 'Special Fonts';
+    src: url(../fonts/Special\ Fonts.ttf);
+}
+
+
+/* special fonts attributes */
+
+.sf::before {
+    font-family: "Special Fonts"!important;
+    font-style: normal!important;
+    font-weight: normal!important;
+    font-variant: normal!important;
+    text-transform: none!important;
+}
+
+.ic-country::before {
+    content: 'g';
+}
+
+.ic-city-monotone::before {
+    content: 'e';
+}
+
+.ic-changal::before {
+    content: 'n';
+}
+
+.ic-toursit-place::before {
+    content: 's';
+}
+
+.ic-entertainments::before {
+    content: 'k';
+}
+
+.ic-shop-center::before {
+    content: 'F';
+}
